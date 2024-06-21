@@ -1,25 +1,25 @@
 class Dmtrctl < Formula
   desc "The dmtrctl application"
   homepage "https://github.com/demeter-run/cli"
-  version "1.4.0"
+  version "1.4.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/demeter-run/cli/releases/download/v1.4.0/dmtrctl-aarch64-apple-darwin.tar.xz"
-      sha256 "5f4ec83f22f4adbdb441d3430d41bcb71329fc76f3c3264984de01c98f6cfa4e"
+      url "https://github.com/demeter-run/cli/releases/download/v1.4.1/dmtrctl-aarch64-apple-darwin.tar.xz"
+      sha256 "11fde33073a94f923ad092cfaa628399d786eb478f508390814fcae73e85f686"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/demeter-run/cli/releases/download/v1.4.0/dmtrctl-x86_64-apple-darwin.tar.xz"
-      sha256 "1c5779933b55065e0052db1cb903a385e23e903296b874b3a413bdbbc815bf64"
+      url "https://github.com/demeter-run/cli/releases/download/v1.4.1/dmtrctl-x86_64-apple-darwin.tar.xz"
+      sha256 "32b801656c15a5eaf51c32e1fc6bce483a4af3671e0ccf739df111bc1a94d753"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/demeter-run/cli/releases/download/v1.4.0/dmtrctl-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "329205b8ef61b4bbc4b5fa8379549b97050c39f87053f6fa6b1189f92fb89817"
+      url "https://github.com/demeter-run/cli/releases/download/v1.4.1/dmtrctl-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9190d91df5b136d36118ae94491c2908c3e21d3e7fe8aa1c45c79833e51cc912"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/demeter-run/cli/releases/download/v1.4.0/dmtrctl-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a15261a2cb56b01dd87203894d5e13f3a67f646f1422990f099e50b33f1829be"
+      url "https://github.com/demeter-run/cli/releases/download/v1.4.1/dmtrctl-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2f480df2e584259641a5098266368c8c04ca3e379cf2f9a43040b3d9170e5fa9"
     end
   end
   license "Apache-2.0"
